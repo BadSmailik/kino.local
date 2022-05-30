@@ -1,0 +1,86 @@
+@import "../../../assets/style/css/RobotoBlack/RobotoBlack.css";
+@import "../../../assets/style/css/RobotoBold/RobotoBold.css";
+@import "../../../assets/style/css/RobotoItalic/RobotoItalic.css";
+@import "../../../assets/style/css/RobotoMedium/RobotoMedium.css";
+@import "../../../assets/style/css/RobotoRegular/RobotoRegular.css";
+@import "../../../assets/style/css/fonts.css";
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  /* font-family: 'JetBrainsRegular', sans-serif !important; */
+  font-family: "RobotoRegular", sans-serif !important;
+  font-size: 15px;
+  background-image: url("../../../assets/style/images/bg.gif");
+}
+
+.col,
+nav {
+  padding: 0 !important;
+
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "RobotoBold", sans-serif;
+}
+
+.link {
+  color: #F7F8FC;
+  transition: background 0.2s linear;
+}
+
+.link:hover {
+  color: rgb(200, 200, 200);
+}
+
+nav {
+  padding: 0 !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: rgb(108, 117, 125);
+  color: rgb(255, 255, 255);
+}
+
+.main_link {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s linear;
+}
+
+.main_link:hover {
+  color: rgb(76, 142, 171);
+}
+
+.bg_profile {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+.avatar {
+  position: absolute;
+  z-index: 1000;
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  left: 50px;
+  top: 50px;
+  border: 1px solid #000;
+}
