@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="/assets/style/css/main.css">
     <script src="https://cdn.tiny.cloud/1/e1lg6rzpq17mvmwyrplee0lbega4ezbafjibjd0quye1yqft/tinymce/6/tinymce.min.js" referrerpolicy="origin">
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar bg-light">
+        <nav class="navbar bg-secondary">
             <div class="container-fluid">
                 <a href="/" class="navbar-brand mb-0 h1"><?= $_SERVER['SERVER_NAME'] ?></a>
             </div>

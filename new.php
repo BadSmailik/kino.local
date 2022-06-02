@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $content->text = nl2br($data['text']);
         $content->login = $_SESSION['user']['name'];
         $content->user_id = $_SESSION['user']['id'];
-        $content->date = date('d.m.Y H:i');
+        $content->date_action = date('d.m.Y H:i');
         R::store($content);
         header("Location: {$_SERVER['REQUEST_URI']}");
     } else {

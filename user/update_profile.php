@@ -44,12 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             echo '<div class="alert alert-danger text-center m-auto mb-3" role="alert">' . $errors[$i] . '</div>';
         }
     } else {
-        // debug($path_file);
-        // print_r($path_file['dirname'] . '/' . $path_file['filename'] . '.' . $path_file['extension']);
         $up_user = R::load('users', $_SESSION['user']['id']);
         $up_user->name = $_POST['name'];
         $up_user->avatar = $path_file['dirname'] . '/' . $path_file['filename'] . '.' . $path_file['extension'];
         R::store($up_user);
+        header("Location: {$_SERVER['REQUEST_URI']}");
     }
 }
 ?>

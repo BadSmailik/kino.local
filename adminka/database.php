@@ -20,7 +20,7 @@ $contents = R::findAll('content');
 				<td>
 					<form method="post">
 						<input type="hidden" name="id" value="<?= $content->id ?>">
-						<button class="btn btn-danger" type="submit" name="delete" value="del_post"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;удалить</button>
+						<button id="target" class="btn btn-danger" type="submit" name="delete" value="del_post"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;удалить</button>
 					</form>
 				</td>
 			</tr>
